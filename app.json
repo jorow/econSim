@@ -1,0 +1,16 @@
+{
+  "name": "econSim",
+  "description": "you tell me",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
