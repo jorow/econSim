@@ -1,0 +1,42 @@
+      hRadius: uniform constant of agent circle's (hub) radius
+      pRadius: same of packages (pac)
+        hSize: hub's daimeter
+        pSize: pac's -"-
+          tau: (τ) = 2*π, or one revolution in radians
+            w: width of canvas in pixels
+            h: height -:-
+    backColor: background color
+      freePos: count of which position in pac array to place next pack (instead of slicing arrays)
+       hCount: amount of huds
+       pCount: -"-       pacs
+         hubs: array of hubs
+         pacs: -"-      pacs
+         free: array of free (null) slots in 'hubs'
+         data: boolean array of whether pixel is occupied by a hub
+          Pac: pac object
+          Hub: hub -"-
+(this = pac)
+    this.send: identity of sending hub
+    this.take: -"-         receiving hub
+           dx: x delta betweeen send & take centers
+           dy: y -"-
+            a: angle of path in order to calc. next 2 vars
+      this.cx: x value change per iteretion
+      this.cy: y -"-
+   this.color: color
+            A: cx/cy amplitude in order to calc. next 4 vars
+       this.x: x axis current value
+       this.y: y -"-
+      this.dx: dx current value
+      this.dy: dy -"-
+    this.dist: current distance to goal
+   this.speed: multiplicant of cx/cy
+       this.i: identity
+   this.count: current amount of iterations:
+            d: previous dist of pac
+(this = hub)
+       this.i: identity
+       this.x: x axis position
+       this.y: y -"-
+this.partners: trading partners
+   this.color: color
